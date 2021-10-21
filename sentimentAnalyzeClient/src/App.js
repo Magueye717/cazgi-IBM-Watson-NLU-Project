@@ -4,6 +4,10 @@ import EmotionTable from './EmotionTable.js';
 import React from 'react';
 
 class App extends React.Component {
+
+  componentDidMount() {
+    document.title = "Sentiment Analyzer"; 
+ }
   /*
   We are setting the component as a state named innercomp.
   When this state is accessed, the HTML that is set as the 
@@ -15,7 +19,7 @@ class App extends React.Component {
           sentimentOutput:[],
           sentiment:true
         }
-  
+
   /*
   This method returns the component based on what the input mode is.
   If the requested input mode is "text" it returns a textbox with 4 rows.

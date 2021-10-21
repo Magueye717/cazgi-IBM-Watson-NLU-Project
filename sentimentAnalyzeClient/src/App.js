@@ -37,6 +37,7 @@ class App extends React.Component {
       });
   } 
   
+  
   sendForSentimentAnalysis = () => {
     this.setState({sentiment:true});
     let url = ".";
